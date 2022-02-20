@@ -12,6 +12,9 @@
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
+
+      <!-- Style Popup -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- site icon -->
       <link rel="icon" href="images/fevicon.png" type="image/png" />
       <!-- bootstrap css -->
@@ -47,7 +50,7 @@
                   <div class="sidebar_user_info">
                      <div class="icon_setting"></div>
                      <div class="user_profle_side">
-                        <div class="user_img"><img class="img-responsive" src="images/layout_img/user_img.jpg" alt="#" /></div>
+                        <div class="user_img"><img class="img-responsive" src="images/layout_img/user-img.jfif" alt="#" /></div>
                         <div class="user_info">
                            <h6>John David</h6>
                            <p><span class="online_animation"></span> Online</p>
@@ -56,9 +59,9 @@
                   </div>
                </div>
                <div class="sidebar_blog_2">
-                  <h4>General</h4>
+                  <!-- <h4>General</h4> -->
                   <ul class="list-unstyled components">
-                     <li class="active">
+                     <!-- <li class="active">
                         <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
                         <ul class="collapse list-unstyled" id="dashboard">
                            <li>
@@ -68,7 +71,7 @@
                               <a href="dashboard_2.html">> <span>Dashboard style 2</span></a>
                            </li>
                         </ul>
-                     </li>
+                     </li> -->
                      <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Enterprise Setup</span></a></li>
                      <li>
                         <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Compliance Management</span></a>
@@ -96,6 +99,32 @@
             </nav>
             <!-- end sidebar -->
             <!-- right content -->
+            <!-- PopUp -->
+            <div class="popup" id="popup" style="display:none;">
+               <input type="button" name="Close" class="s3-btn-close" onclick="popupClose();" value="&times">
+               <div class="faq_section">
+                  <h2>Frequently Asked Questions for Log in Issues :</h2>
+                  <ul>
+                     <li>
+                        <h4>I had an account on <a href="https://incutopia.com/">https://incutopia.com/</a> but I’m unable to
+                           log in now</h4>
+                        <p>The quickest way to resolve this is by select the forgot password option. <a href="#">Click</a> here
+                           to reset your
+                           password and continue
+                           with your Incutopia journey</p>
+                     </li>
+                     <li>
+                        <h4>I made an account previously, but I do not remember my email ID and password:</h4>
+                        <p>Please create a new account OR email us at support@incutopia.com and share your Company Name with us
+                           so that we can help
+                           you to access your old account.</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- PopUp ^ -->
+
+
             <div id="content">
                <!-- topbar -->
                <div class="topbar">
@@ -108,9 +137,9 @@
                         <div class="right_topbar">
                            <div class="icon_info">
                               <ul>
-                                 <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge">2</span></a></li>
-                                 <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge">3</span></a></li>
+                                 <!-- <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge">2</span></a></li> -->
+                                 <li><a href="#" onclick="popupOpen()"><i class="fa fa-question-circle"></i></a></li>
+                                 <!-- <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge">3</span></a></li> -->
                               </ul>
                               <ul class="user_profile_dd">
                                  <li>
@@ -149,8 +178,8 @@
                               </div>
                               <div class="counter_no">
                                  <div>
-                                    <p class="total_no">2500</p>
-                                    <p class="head_couter">Welcome</p>
+                                    <!-- <p class="total_no">2500</p> -->
+                                    <p class="head_couter">Enterprise Setup</p>
                                  </div>
                               </div>
                            </div>
@@ -164,8 +193,8 @@
                               </div>
                               <div class="counter_no">
                                  <div>
-                                    <p class="total_no">123.50</p>
-                                    <p class="head_couter">Average Time</p>
+                                    <!-- <p class="total_no">123.50</p> -->
+                                    <p class="head_couter">Compliance Management</p>
                                  </div>
                               </div>
                            </div>
@@ -179,8 +208,8 @@
                               </div>
                               <div class="counter_no">
                                  <div>
-                                    <p class="total_no">1,805</p>
-                                    <p class="head_couter">Collections</p>
+                                    <!-- <p class="total_no">1,805</p> -->
+                                    <p class="head_couter">Profile Building & Sales</p>
                                  </div>
                               </div>
                            </div>
@@ -194,8 +223,8 @@
                               </div>
                               <div class="counter_no">
                                  <div>
-                                    <p class="total_no">54</p>
-                                    <p class="head_couter">Comments</p>
+                                    <!-- <p class="total_no">54</p> -->
+                                    <p class="head_couter">Financial Managements</p>
                                  </div>
                               </div>
                            </div>

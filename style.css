@@ -160,6 +160,7 @@ h1 {
 
 .img-responsive {
     max-width: 100%;
+    filter: brightness(170%);
 }
 
 h3 {
@@ -1101,14 +1102,16 @@ a[data-toggle="collapse"] {
 }
 
 .counter_section {
-    min-height: auto;
+    /* min-height: auto; */
     display: block;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     border: 0px solid #e7e7e7;
-    padding: 30px 35px;
+    padding: 20px 35px;
     background: #fff;
     border-radius: 5px;
     min-height: 125px;
+    height: 100%;
+    max-height: 150px;
     display: flex;
 }
 
@@ -1150,7 +1153,8 @@ a[data-toggle="collapse"] {
 }
 
 .counter_no {
-    padding: 0 12px;
+    padding-top: 0.5em;
+    padding: 0 8px;
     align-content: center;
     align-items: center;
     float: right;
@@ -1171,12 +1175,13 @@ a[data-toggle="collapse"] {
 }
 
 .counter_no .head_couter {
+    min-width: 100px;
     float: left;
     width: 100%;
-    color: #99abb4;
-    font-weight: 300;
+    color: #5c5c5c;
+    font-weight: 500;
     margin: 0px 0 0 0;
-    font-size: 20px;
+    font-size: 30px;
     text-align: right;
 }
 
@@ -3414,4 +3419,118 @@ table.projects tr td:first-child {
 #map {
     height: 100%;
     min-height: 720px;
+}
+
+/* PopUp */
+
+.faq_section {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  border-radius: 7px;
+  padding: 1em 2em;
+  z-index: 200;
+}
+
+.faq_section h2 {
+  align-self: flex-start;
+  font-size: 1.3em;
+  margin: 0.5em 0.7em;
+  line-height: 25px;
+}
+
+.faq_section ul {
+  width: 80%;
+  font-size: 1em;
+  margin: 0.9em 1.1em;
+  line-height: 25px;
+}
+
+.faq_section a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 400;
+  color: none;
+}
+
+.faq_section ul li h4 {
+  color: rgb(242, 98, 52);
+  font-weight: 500;
+  line-height: 25px;
+  /* padding-bottom: 0.5em; */
+}
+
+.faq_section ul li p {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  text-align: justify;
+  font-size: 1em;
+}
+
+/* .close {
+  padding: 0px;
+  cursor: pointer;
+  background: 0px center;
+  border: 0px;
+  appearance: none;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.close :hover {
+  border: 2px solid #efefef;
+} */
+
+/* .close {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(255 255 255) 0px 1px 0px;
+} */
+
+.popup {
+  margin: 2em auto;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 101;
+  max-width: 768px;
+  max-height: 673px;
+  height: fit-content;
+  width: 80%;
+  border: 2px solid #363636;
+  border-radius: 10px;
+}
+
+
+input.s3-btn-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: black;
+  border: solid 2px white;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+  padding: 0.2em;
+  font-size: 1.1em;
+  z-index: 201;
 }
